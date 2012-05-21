@@ -1,0 +1,85 @@
+/* 
+    Document   : main
+    Created on : 27 déc. 2011, 22:45:26
+    Author     : Simon
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.flip
+{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.sample { visibility : hidden; }
+
+#keyhandler
+{
+    line-height : 0;
+    height : 0;
+    font-size : 0%;
+    padding : 0;
+    margin : 0;
+    border : 0;
+}
+
+body
+{
+    width : 600px;
+    height : 100%;
+    margin : 0 auto;
+}
+    .sprite 
+    {
+        display : none;
+    }
+    
+    #stage
+    {
+        width : 600px;
+        height : 380px;
+        position :relative;
+        background: transparent url(../img/bkgd/stage1.png) 50% 0% no-repeat scroll;
+        overflow : hidden;
+    }
+
+        .character-container
+        {
+            overflow : hidden;
+            position : absolute;
+            bottom : 25px;
+            height : 350px;
+            width : 80px;
+            _zoom: 1;
+        }
+            .character-container .character
+            {
+                width : 80px;
+                height : 100px;
+                position : absolute;
+                bottom : 1px;
+                z-index : 2;
+                overflow : hidden;
+            }
+            
+            .character-container .shadow
+            {
+                width : 80px;
+                background : transparent url(../img/sprites/special.png) -228px -258px no-repeat;
+                height : 10px;
+                position : absolute;
+                bottom : 0;
+                z-index : 1;
+                overflow : hidden;
+            }
+            
