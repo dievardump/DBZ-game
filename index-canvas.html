@@ -7,21 +7,6 @@
             console.log(data);
             socket.emit('my other event', { my: 'data' });
         });*/
-
-        var Toto = function() {
-            
-        };
-        
-        Toto.prototype.options = {
-            
-        };
-        
-        var truite = new Toto();
-        var salmon = new Toto();
-        console.log(truite, salmon);
-        truite.options = 1;
-        console.log(truite, salmon);
-        
     </script>
     <link type="text/css" rel="stylesheet" media="screen" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css" />
     <link type="text/css" rel="stylesheet" media="screen" href="./assets/css/main.css" />
@@ -34,6 +19,9 @@
             Sorry for the inconvenience caused.<br/><br/>
             DieVarDump.
         </canvas>
+    </div>
+    <div id="fps-output">
+        
     </div>
     
     <div class="sample character-container">
